@@ -4,9 +4,9 @@ function nixify
         direnv allow
     end
     set -l defaultNixTest 'with import <nixpkgs> {};
-  stdenv.mkDerivation {
-    name = "env";
-    buildInputs = [
+stdenv.mkDerivation {
+  name = "env";
+  buildInputs = [
     bashInteractive
   ];
 }'
